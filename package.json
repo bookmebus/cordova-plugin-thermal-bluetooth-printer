@@ -1,0 +1,13 @@
+{
+  "name": "cordova-plugin-bluetooth-printer",
+  "version": "1.0.0",
+  "cordova": {
+    "id": "com.bookmebus.printer",
+    "platforms": [
+      "android",
+      "ios"
+    ]
+  },
+  "keywords": ["cordova thermal printer"],
+  "description": "Cordova Plugin for bluetooth thermal printer"
+}
