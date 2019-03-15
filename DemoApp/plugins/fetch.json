@@ -1,0 +1,18 @@
+{
+  "cordova-plugin-whitelist": {
+    "source": {
+      "type": "registry",
+      "id": "cordova-plugin-whitelist@1"
+    },
+    "is_top_level": true,
+    "variables": {}
+  },
+  "com.bookmebus.printer": {
+    "source": {
+      "type": "local",
+      "path": "/Users/bookmebus/Documents/Development/mobile/plugins/DemoApp/node_modules/cordova-plugin-bluetooth-printer"
+    },
+    "is_top_level": true,
+    "variables": {}
+  }
+}

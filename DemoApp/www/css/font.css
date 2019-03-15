@@ -1,0 +1,10 @@
+@font-face {
+  font-family: 'Battambang';
+  src: url('font/Battambang.ttf.svg#Battambang') format('svg');
+  src: url('font/Battambang.ttf.svg#Battambang') format('svg'),
+       url('font/Battambang.ttf.woff') format('woff'),
+       url('font/Battambang.ttf.eot'),
+       url('font/Battambang.ttf.eot?#iefix') format('embedded-opentype');
+  font-weight: normal;
+  font-style: normal;
+}

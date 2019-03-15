@@ -16,6 +16,11 @@
         </config-file>
         <header-file src="src/ios/BmbBluetoothPrinter.h" />
         <source-file src="src/ios/BmbBluetoothPrinter.m" />
+
+        <framework src="src/ios/PrinterSDK" custom="true" />
+        <framework src="src/ios/PrinterSDK/libPrinterSDK.a" custom="true" />
+        <framework src="src/ios/PrinterSDK/PrinterSDK.h" custom="true" />
+
     </platform>
 
 

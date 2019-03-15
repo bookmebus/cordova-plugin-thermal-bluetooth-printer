@@ -8,12 +8,28 @@ var exec = require('cordova/exec');
 
 var PLUGIN_NAME = 'BmbBluetoothPrinter';
 var BmbBluetoothPrinter = {
-    echo: function(phrase, cb) {
-        exec(cb, null, PLUGIN_NAME, 'echo', [phrase]);
-    },
-    getDate: function(cb) {
-        exec(cb, null, PLUGIN_NAME, 'getDate', []);
-    }
+  echo: function(phrase, success) {
+    exec(success, null, PLUGIN_NAME, 'echo', [phrase]);
+  },
+  getDate: function(success) {
+    exec(success, null, PLUGIN_NAME, 'getDate', []);
+  },
+
+  printText: function(printValue, success, failed) {
+    exec(success, failed, PLUGIN_NAME, 'printText', [printValue]);
+  },
+
+  printImage: function(imageBase64, success, failed) {
+    exec(success, failed, PLUGIN_NAME, 'printImage', [imageBase64]);
+  },
+
+  scanPrinter: function(success, failed) {
+    exec(success, failed, PLUGIN_NAME, 'scanPrinter', []);
+  },
+
+  connectPrinter: function(index, success, failed) {
+    exec(success, failed, PLUGIN_NAME, 'connectPrinter', [index]);
+  }
 };
 
 module.exports = BmbBluetoothPrinter;

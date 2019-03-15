@@ -1,0 +1,39 @@
+{
+  "prepare_queue": {
+    "installed": [],
+    "uninstalled": []
+  },
+  "config_munge": {
+    "files": {
+      "config.xml": {
+        "parents": {
+          "/*": [
+            {
+              "xml": "<feature name=\"BmbBluetoothPrinter\"><param name=\"ios-package\" onload=\"true\" value=\"BmbBluetoothPrinter\" /></feature>",
+              "count": 1
+            }
+          ]
+        }
+      }
+    }
+  },
+  "installed_plugins": {
+    "com.bookmebus.printer": {
+      "PACKAGE_NAME": "io.cordova.hellocordova"
+    }
+  },
+  "dependent_plugins": {},
+  "modules": [
+    {
+      "id": "com.bookmebus.printer.BmbBluetoothPrinter",
+      "file": "plugins/com.bookmebus.printer/www/BmbBluetoothPrinter.js",
+      "pluginId": "com.bookmebus.printer",
+      "clobbers": [
+        "BmbBluetoothPrinter"
+      ]
+    }
+  ],
+  "plugin_metadata": {
+    "com.bookmebus.printer": "0.0.1"
+  }
+}
