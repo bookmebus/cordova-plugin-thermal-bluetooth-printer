@@ -1,18 +1,19 @@
 cordova.define('cordova/plugin_list', function(require, exports, module) {
 module.exports = [
   {
-    "id": "com.bookmebus.printer.BmbBluetoothPrinter",
-    "file": "plugins/com.bookmebus.printer/www/BmbBluetoothPrinter.js",
-    "pluginId": "com.bookmebus.printer",
+    "id": "cordova-plugin-thermal-bluetooth-printer.BluetoothPrinter",
+    "file": "plugins/cordova-plugin-thermal-bluetooth-printer/www/BluetoothPrinter.js",
+    "pluginId": "cordova-plugin-thermal-bluetooth-printer",
     "clobbers": [
-      "BmbBluetoothPrinter"
+      "BTPrinter"
     ]
   }
 ];
 module.exports.metadata = 
 // TOP OF METADATA
 {
-  "com.bookmebus.printer": "0.0.1"
+  "cordova-plugin-thermal-bluetooth-printer": "0.0.1",
+  "cordova-plugin-whitelist": "1.3.3"
 };
 // BOTTOM OF METADATA
 });

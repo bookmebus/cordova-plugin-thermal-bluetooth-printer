@@ -19,8 +19,8 @@
         <param name="ios-package" value="CDVGestureHandler" />
         <param name="onload" value="true" />
     </feature>
-    <feature name="BmbBluetoothPrinter">
-        <param name="ios-package" onload="true" value="BmbBluetoothPrinter" />
+    <feature name="BluetoothPrinter">
+        <param name="ios-package" onload="true" value="BluetoothPrinter" />
     </feature>
     <name>HelloCordova</name>
     <description>

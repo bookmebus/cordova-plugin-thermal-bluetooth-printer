@@ -3,8 +3,7 @@ $('#btn-print-text')[0].disabled = true
 $('#btn-print-image')[0].disabled = true
 
 $('#btn-scan').on('click', function() {
-
-  BmbBluetoothPrinter.scanPrinter(function(result) {
+  BTPrinter.scanPrinter(function(result) {
     console.log("==== Returned printers ==== ", result)
 
     printerManager.renderDevices(result)
@@ -14,27 +13,38 @@ $('#btn-scan').on('click', function() {
 
 $("#btn-print-text").on('click', function() {
   var string = "Test printing text"
-  BmbBluetoothPrinter.printText(string, null, null)
+  BTPrinter.printText(string, null, null)
 })
 
 $("#btn-print-image").on('click', function() {
   var $canvasContent = $("#canvas-content")[0]
   html2canvas($canvasContent, { useCORS: true }).then(function(canvas) {
     var base64 = canvas.toDataURL("image/png")
-    base64 = base64.replace(/^data:image\/(png|jpg);base64,/, "");
-    console.log("canvas == ", base64)
-    BmbBluetoothPrinter.printImage(base64, null, null)
+    if(cordova != undefined && cordova.platformId == 'ios')
+      base64 = base64.replace(/^data:image\/(png|jpg);base64,/, "");
+
+    BTPrinter.printImage(base64, null, null)
   });
 })
 
+$("#btn-disconnect").on('click', function() {
+  BTPrinter.disconnect()
+})
+
 $(document.body).delegate('.btn-connect', 'click', function() {
-  var index = $(this).data("index")
-  console.log("Index == ", index)
-  BmbBluetoothPrinter.connectPrinter(index, function(response) {
+  var selectedPrinter = ''
+  if(cordova != undefined && cordova.platformId == 'ios')
+    selectedPrinter = $(this).data("index")
+  else if(cordova != undefined && cordova.platformId == 'android')
+    selectedPrinter = $(this).data("item")
+
+  BTPrinter.connectPrinter(selectedPrinter, function(response) {
     console.log("connect success ====")
     $('#btn-print-text')[0].disabled = false
     $('#btn-print-image')[0].disabled = false
-  }, null)
+  }, function(error) {
+    console.log("Connect printer failed == ", error)
+  })
 })
 
 var printerManager = {
@@ -46,10 +56,7 @@ var printerManager = {
       var name = result[i].split("|")[0]
       var uuid = result[i].split("|")[1]
 
-      $.tmpl( template, { "name": name, "uuid": uuid, "index": i}).appendTo($deviceContainer)
+      $.tmpl( template, { "name": name, "uuid": uuid, "index": i, "item": result[i]}).appendTo($deviceContainer)
     }
-    // if(result.length > 0) {
-    //   $('#btn-connect')[0].disabled = false
-    // }
   }
 }

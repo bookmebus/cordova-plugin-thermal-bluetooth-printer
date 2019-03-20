@@ -5,38 +5,40 @@
 	};
 	objectVersion = 46;
 	objects = {
+
 /* Begin PBXBuildFile section */
 		0207DA581B56EA530066E2B4 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0207DA571B56EA530066E2B4 /* Images.xcassets */; };
 		1D3623260D0F684500981E51 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D3623250D0F684500981E51 /* AppDelegate.m */; };
 		1D60589B0D05DD56006BFB54 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; };
+		219B87D43F604E41817C1E75 /* PrinterSDK in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C073E84D8D44339A87E96CB /* PrinterSDK */; };
 		301BF552109A68D80062928A /* libCordova.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 301BF535109A57CC0062928A /* libCordova.a */; };
 		302D95F114D2391D003F00A1 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 302D95EF14D2391D003F00A1 /* MainViewController.m */; };
 		302D95F214D2391D003F00A1 /* MainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 302D95F014D2391D003F00A1 /* MainViewController.xib */; };
 		6AFF5BF91D6E424B00AB3073 /* CDVLaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6AFF5BF81D6E424B00AB3073 /* CDVLaunchScreen.storyboard */; };
-		96BE7E165D6B43D1AC760B5C /* BmbBluetoothPrinter.m in Sources */ = {isa = PBXBuildFile; fileRef = 161FF5046C0D4A978CF7A84A /* BmbBluetoothPrinter.m */; };
-		4E976EFAC48F4EC1B95559DB /* PrinterSDK in Resources */ = {isa = PBXBuildFile; fileRef = 06A31B4474BC44F08618D775 /* PrinterSDK */; };
-		F7829D05DC914E8DB2AE620E /* libPrinterSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 282AB36B8B034AB882D0A12B /* libPrinterSDK.a */; };
-		8D439E460AE840C09AD34F08 /* PrinterSDK.h in Resources */ = {isa = PBXBuildFile; fileRef = 5B0F26CCAF3E45EA910E80A6 /* PrinterSDK.h */; };
+		B8CB0CFDA4794A22A632C58E /* PrinterSDK.h in Frameworks */ = {isa = PBXBuildFile; fileRef = CDF7D60894FE4A0C9E69ABC2 /* PrinterSDK.h */; };
+		BB5954623CA34117B2E4626D /* libPrinterSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = EED580DA34E149DEBF681EBF /* libPrinterSDK.a */; };
+		C7E1869F22424A070088151E /* libPrinterSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C7E1869D22424A070088151E /* libPrinterSDK.a */; };
+		D32B34B11AF340D8AB0DE623 /* BluetoothPrinter.m in Sources */ = {isa = PBXBuildFile; fileRef = 3809E755198B40059CF05A40 /* BluetoothPrinter.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
 		301BF534109A57CC0062928A /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 301BF52D109A57CC0062928A /* CordovaLib.xcodeproj */;
+			containerPortal = 301BF52D109A57CC0062928A /* CordovaLib/CordovaLib.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = D2AAC07E0554694100DB518D;
 			remoteInfo = CordovaLib;
 		};
 		301BF550109A68C00062928A /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 301BF52D109A57CC0062928A /* CordovaLib.xcodeproj */;
+			containerPortal = 301BF52D109A57CC0062928A /* CordovaLib/CordovaLib.xcodeproj */;
 			proxyType = 1;
 			remoteGlobalIDString = D2AAC07D0554694100DB518D;
 			remoteInfo = CordovaLib;
 		};
-		C733EDBB223B61B1001A1CD8 /* PBXContainerItemProxy */ = {
+		C7E1869A224249FF0088151E /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 301BF52D109A57CC0062928A /* CordovaLib.xcodeproj */;
+			containerPortal = 301BF52D109A57CC0062928A /* CordovaLib/CordovaLib.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = C0C01EB21E3911D50056E6CB;
 			remoteInfo = Cordova;
@@ -49,7 +51,7 @@
 		1D3623250D0F684500981E51 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		1D6058910D05DD3D006BFB54 /* HelloCordova.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HelloCordova.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		301BF52D109A57CC0062928A /* CordovaLib.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = CordovaLib.xcodeproj; path = CordovaLib/CordovaLib.xcodeproj; sourceTree = "<group>"; };
+		301BF52D109A57CC0062928A /* CordovaLib/CordovaLib.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = CordovaLib/CordovaLib.xcodeproj; sourceTree = "<group>"; };
 		301BF56E109A69640062928A /* www */ = {isa = PBXFileReference; lastKnownFileType = folder; path = www; sourceTree = SOURCE_ROOT; };
 		302D95EE14D2391D003F00A1 /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
 		302D95EF14D2391D003F00A1 /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
@@ -58,17 +60,19 @@
 		3047A5101AB8059700498E2A /* build-release.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = "build-release.xcconfig"; path = "cordova/build-release.xcconfig"; sourceTree = SOURCE_ROOT; };
 		3047A5111AB8059700498E2A /* build.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = build.xcconfig; path = cordova/build.xcconfig; sourceTree = SOURCE_ROOT; };
 		32CA4F630368D1EE00C91783 /* HelloCordova-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "HelloCordova-Prefix.pch"; sourceTree = "<group>"; };
+		3809E755198B40059CF05A40 /* BluetoothPrinter.m */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.objc; name = BluetoothPrinter.m; path = "cordova-plugin-thermal-bluetooth-printer/BluetoothPrinter.m"; sourceTree = "<group>"; };
+		3C073E84D8D44339A87E96CB /* PrinterSDK */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = PrinterSDK; path = "HelloCordova/Plugins/cordova-plugin-thermal-bluetooth-printer/PrinterSDK"; sourceTree = "<group>"; };
+		4B1FEFD3076C407192B3263C /* BluetoothPrinter.h */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; name = BluetoothPrinter.h; path = "cordova-plugin-thermal-bluetooth-printer/BluetoothPrinter.h"; sourceTree = "<group>"; };
 		6AFF5BF81D6E424B00AB3073 /* CDVLaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = CDVLaunchScreen.storyboard; path = HelloCordova/CDVLaunchScreen.storyboard; sourceTree = SOURCE_ROOT; };
 		8D1107310486CEB800E47090 /* HelloCordova-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "HelloCordova-Info.plist"; path = "HelloCordova/HelloCordova-Info.plist"; plistStructureDefinitionIdentifier = "com.apple.xcode.plist.structure-definition.iphone.info-plist"; sourceTree = SOURCE_ROOT; };
+		C7E1869D22424A070088151E /* libPrinterSDK.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libPrinterSDK.a; sourceTree = "<group>"; };
+		C7E1869E22424A070088151E /* PrinterSDK.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrinterSDK.h; sourceTree = "<group>"; };
+		CDF7D60894FE4A0C9E69ABC2 /* PrinterSDK.h */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; name = PrinterSDK.h; path = "HelloCordova/Plugins/cordova-plugin-thermal-bluetooth-printer/PrinterSDK.h"; sourceTree = "<group>"; };
 		EB87FDF31871DA8E0020F90C /* www */ = {isa = PBXFileReference; lastKnownFileType = folder; name = www; path = ../../www; sourceTree = "<group>"; };
 		EB87FDF41871DAF40020F90C /* config.xml */ = {isa = PBXFileReference; lastKnownFileType = text.xml; name = config.xml; path = ../../config.xml; sourceTree = "<group>"; };
 		ED33DF2A687741AEAF9F8254 /* Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Bridging-Header.h"; sourceTree = "<group>"; };
+		EED580DA34E149DEBF681EBF /* libPrinterSDK.a */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = archive.ar; name = libPrinterSDK.a; path = "HelloCordova/Plugins/cordova-plugin-thermal-bluetooth-printer/libPrinterSDK.a"; sourceTree = "<group>"; };
 		F840E1F0165FE0F500CFE078 /* config.xml */ = {isa = PBXFileReference; lastKnownFileType = text.xml; name = config.xml; path = HelloCordova/config.xml; sourceTree = "<group>"; };
-		161FF5046C0D4A978CF7A84A /* BmbBluetoothPrinter.m */ = {isa = PBXFileReference; name = "BmbBluetoothPrinter.m"; path = "../../../../../cordova-plugin-bluetooth-printer/src/ios/BmbBluetoothPrinter.m"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; explicitFileType = undefined; includeInIndex = 0; };
-		769CB0D101F849ECBB0A0094 /* BmbBluetoothPrinter.h */ = {isa = PBXFileReference; name = "BmbBluetoothPrinter.h"; path = "../../../../../cordova-plugin-bluetooth-printer/src/ios/BmbBluetoothPrinter.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
-		06A31B4474BC44F08618D775 /* PrinterSDK */ = {isa = PBXFileReference; name = "PrinterSDK"; path = "HelloCordova/Plugins/com.bookmebus.printer/PrinterSDK"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		282AB36B8B034AB882D0A12B /* libPrinterSDK.a */ = {isa = PBXFileReference; name = "libPrinterSDK.a"; path = "HelloCordova/Plugins/com.bookmebus.printer/libPrinterSDK.a"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = archive.ar; explicitFileType = undefined; includeInIndex = 0; };
-		5B0F26CCAF3E45EA910E80A6 /* PrinterSDK.h */ = {isa = PBXFileReference; name = "PrinterSDK.h"; path = "HelloCordova/Plugins/com.bookmebus.printer/PrinterSDK.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,9 +81,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				301BF552109A68D80062928A /* libCordova.a in Frameworks */,
-				4E976EFAC48F4EC1B95559DB /* PrinterSDK in Resources */,
-				F7829D05DC914E8DB2AE620E /* libPrinterSDK.a in Frameworks */,
-				8D439E460AE840C09AD34F08 /* PrinterSDK.h in Resources */,
+				C7E1869F22424A070088151E /* libPrinterSDK.a in Frameworks */,
+				219B87D43F604E41817C1E75 /* PrinterSDK in Frameworks */,
+				BB5954623CA34117B2E4626D /* libPrinterSDK.a in Frameworks */,
+				B8CB0CFDA4794A22A632C58E /* PrinterSDK.h in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -110,11 +115,11 @@
 		29B97314FDCFA39411CA2CEA /* CustomTemplate */ = {
 			isa = PBXGroup;
 			children = (
-				C733EDC3223B6518001A1CD8 /* PrinterSDK */,
+				C7E1869C22424A070088151E /* PrinterSDK */,
 				EB87FDF41871DAF40020F90C /* config.xml */,
 				EB87FDF31871DA8E0020F90C /* www */,
 				EB87FDF11871DA420020F90C /* Staging */,
-				301BF52D109A57CC0062928A /* CordovaLib.xcodeproj */,
+				301BF52D109A57CC0062928A /* CordovaLib/CordovaLib.xcodeproj */,
 				080E96DDFE201D6D7F000001 /* Classes */,
 				307C750510C5A3420062BCA9 /* Plugins */,
 				29B97315FDCFA39411CA2CEA /* Other Sources */,
@@ -151,9 +156,9 @@
 		29B97323FDCFA39411CA2CEA /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				06A31B4474BC44F08618D775 /* PrinterSDK */,
-				282AB36B8B034AB882D0A12B /* libPrinterSDK.a */,
-				5B0F26CCAF3E45EA910E80A6 /* PrinterSDK.h */,
+				3C073E84D8D44339A87E96CB /* PrinterSDK */,
+				EED580DA34E149DEBF681EBF /* libPrinterSDK.a */,
+				CDF7D60894FE4A0C9E69ABC2 /* PrinterSDK.h */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -162,7 +167,7 @@
 			isa = PBXGroup;
 			children = (
 				301BF535109A57CC0062928A /* libCordova.a */,
-				C733EDBC223B61B1001A1CD8 /* Cordova.framework */,
+				C7E1869B224249FF0088151E /* Cordova.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -180,12 +185,21 @@
 		307C750510C5A3420062BCA9 /* Plugins */ = {
 			isa = PBXGroup;
 			children = (
-				161FF5046C0D4A978CF7A84A /* BmbBluetoothPrinter.m */,
-				769CB0D101F849ECBB0A0094 /* BmbBluetoothPrinter.h */,
+				3809E755198B40059CF05A40 /* BluetoothPrinter.m */,
+				4B1FEFD3076C407192B3263C /* BluetoothPrinter.h */,
 			);
 			name = Plugins;
 			path = HelloCordova/Plugins;
 			sourceTree = SOURCE_ROOT;
+		};
+		C7E1869C22424A070088151E /* PrinterSDK */ = {
+			isa = PBXGroup;
+			children = (
+				C7E1869D22424A070088151E /* libPrinterSDK.a */,
+				C7E1869E22424A070088151E /* PrinterSDK.h */,
+			);
+			path = PrinterSDK;
+			sourceTree = "<group>";
 		};
 		EB87FDF11871DA420020F90C /* Staging */ = {
 			isa = PBXGroup;
@@ -243,7 +257,7 @@
 			projectReferences = (
 				{
 					ProductGroup = 301BF52E109A57CC0062928A /* Products */;
-					ProjectRef = 301BF52D109A57CC0062928A /* CordovaLib.xcodeproj */;
+					ProjectRef = 301BF52D109A57CC0062928A /* CordovaLib/CordovaLib.xcodeproj */;
 				},
 			);
 			projectRoot = "";
@@ -261,11 +275,11 @@
 			remoteRef = 301BF534109A57CC0062928A /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		C733EDBC223B61B1001A1CD8 /* Cordova.framework */ = {
+		C7E1869B224249FF0088151E /* Cordova.framework */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.framework;
 			path = Cordova.framework;
-			remoteRef = C733EDBB223B61B1001A1CD8 /* PBXContainerItemProxy */;
+			remoteRef = C7E1869A224249FF0088151E /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 /* End PBXReferenceProxy section */
@@ -275,7 +289,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C733EDC4223B6518001A1CD8 /* PrinterSDK in Resources */,
 				302D95F214D2391D003F00A1 /* MainViewController.xib in Resources */,
 				0207DA581B56EA530066E2B4 /* Images.xcassets in Resources */,
 				6AFF5BF91D6E424B00AB3073 /* CDVLaunchScreen.storyboard in Resources */,
@@ -310,7 +323,7 @@
 				1D60589B0D05DD56006BFB54 /* main.m in Sources */,
 				1D3623260D0F684500981E51 /* AppDelegate.m in Sources */,
 				302D95F114D2391D003F00A1 /* MainViewController.m in Sources */,
-				96BE7E165D6B43D1AC760B5C /* BmbBluetoothPrinter.m in Sources */,
+				D32B34B11AF340D8AB0DE623 /* BluetoothPrinter.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -338,18 +351,9 @@
 				DEVELOPMENT_TEAM = Q2Z5K44P26;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					"\"HelloCordova/Plugins/com.bookmebus.printer\"",
-					"\"HelloCordova/Plugins/com.bookmebus.printer\"",
-					"\"HelloCordova/Plugins/com.bookmebus.printer\"",
-					"\"HelloCordova/Plugins/com.bookmebus.printer\"",
-					"\"HelloCordova/Plugins/com.bookmebus.printer\"",
-					"\"HelloCordova/Plugins/com.bookmebus.printer\"",
-					"\"HelloCordova/Plugins/com.bookmebus.printer\"",
-					"\"HelloCordova/Plugins/com.bookmebus.printer\"",
-					"\"HelloCordova/Plugins/com.bookmebus.printer\"",
-					"\"HelloCordova/Plugins/com.bookmebus.printer\"",
-					"\"HelloCordova/Plugins/com.bookmebus.printer\"",
-					"\"HelloCordova/Plugins/com.bookmebus.printer\"",
+					"\"HelloCordova/Plugins/cordova-plugin-thermal-bluetooth-printer\"",
+					"\"HelloCordova/Plugins/cordova-plugin-thermal-bluetooth-printer\"",
+					"\"HelloCordova/Plugins/cordova-plugin-thermal-bluetooth-printer\"",
 				);
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
@@ -382,18 +386,9 @@
 				DEVELOPMENT_TEAM = Q2Z5K44P26;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					"\"HelloCordova/Plugins/com.bookmebus.printer\"",
-					"\"HelloCordova/Plugins/com.bookmebus.printer\"",
-					"\"HelloCordova/Plugins/com.bookmebus.printer\"",
-					"\"HelloCordova/Plugins/com.bookmebus.printer\"",
-					"\"HelloCordova/Plugins/com.bookmebus.printer\"",
-					"\"HelloCordova/Plugins/com.bookmebus.printer\"",
-					"\"HelloCordova/Plugins/com.bookmebus.printer\"",
-					"\"HelloCordova/Plugins/com.bookmebus.printer\"",
-					"\"HelloCordova/Plugins/com.bookmebus.printer\"",
-					"\"HelloCordova/Plugins/com.bookmebus.printer\"",
-					"\"HelloCordova/Plugins/com.bookmebus.printer\"",
-					"\"HelloCordova/Plugins/com.bookmebus.printer\"",
+					"\"HelloCordova/Plugins/cordova-plugin-thermal-bluetooth-printer\"",
+					"\"HelloCordova/Plugins/cordova-plugin-thermal-bluetooth-printer\"",
+					"\"HelloCordova/Plugins/cordova-plugin-thermal-bluetooth-printer\"",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "HelloCordova/HelloCordova-Prefix.pch";

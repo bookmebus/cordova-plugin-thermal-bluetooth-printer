@@ -35,7 +35,6 @@
         <meta name="viewport" content="initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, viewport-fit=cover">
         <link rel="stylesheet" type="text/css" href="css/font.css">
         <link rel="stylesheet" type="text/css" href="css/index.css">
-        <link href="https://fonts.googleapis.com/css?family=Khmer" rel="stylesheet">
         <title>Hello World</title>
     </head>
     <body>
@@ -58,6 +57,7 @@
                     <!-- <button id="btn-connect">Connect</button> -->
                     <button id="btn-print-text">Print Text</button>
                     <button id="btn-print-image">Print Image</button>
+                    <button id="btn-disconnect">Disconnect</button>
                 </div>
 
             </div>
@@ -78,7 +78,9 @@
                    <p class="printer-uuid" style="color: gray; font-size: 11px;">${uuid}</p>
                 </div>
                 <div style="float: right">
-                    <button class="btn-connect" data-index="${index}">Connect</button>
+                    <button class="btn-connect" data-index="${index}" data-item="${item}">
+                        Connect
+                    </button>
                 </div>
             </div>
         </script>

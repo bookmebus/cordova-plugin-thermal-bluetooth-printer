@@ -1,27 +1,56 @@
-<?xml version='1.0' encoding='utf-8'?>
-<plugin id="com.bookmebus.printer" version="0.0.1" xmlns="http://apache.org/cordova/ns/plugins/1.0" xmlns:android="http://schemas.android.com/apk/res/android">
-    <name>BmbBluetoothPrinter</name>
-    <description>Cool plugin description</description>
-    <js-module name="BmbBluetoothPrinter" src="www/BmbBluetoothPrinter.js">
-        <clobbers target="BmbBluetoothPrinter" />
-    </js-module>
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        id="cordova-plugin-thermal-bluetooth-printer"
+        version="0.0.1">
 
+   <name>BluetoothPrinter</name>
+   <description>A cordova plugin for bluetooth printer for android platform, which support text printing and POS printing.</description>
 
+   <repo>https://github.com/srehanuddin/Cordova-Plugin-Bluetooth-Printer</repo>
+   <license>Apache 2.0</license>
+   <keywords>cordova, bluetooth, printer, pos, text, barcode, image</keywords>
 
-    <platform name="ios">
+   <author>Syed Rehanuddin</author>
+
+   <!-- cordova -->
+   <engines>
+      <engine name="cordova" version=">=3.0.0" />
+   </engines>
+
+   <js-module src="www/BluetoothPrinter.js" name="BluetoothPrinter">
+      <clobbers target="BTPrinter" />
+   </js-module>
+
+   <!-- android -->
+   <platform name="android">
+      <config-file target="res/xml/config.xml" parent="/*">
+         <feature name="BluetoothPrinter">
+            <param name="android-package" value="com.ru.cordova.printer.bluetooth.BluetoothPrinter"/>
+         </feature>
+      </config-file>
+
+      <config-file target="AndroidManifest.xml" parent="/*">
+         <uses-permission android:name="android.permission.BLUETOOTH" />
+      </config-file>
+
+      <source-file src="src/android/BluetoothPrinter.java" target-dir="src/com/ru/cordova/printer/bluetooth" />
+
+   </platform>
+
+   <!-- iOS -->
+   <platform name="ios">
         <config-file target="config.xml" parent="/*">
-            <feature name="BmbBluetoothPrinter">
-                <param name="ios-package" value="BmbBluetoothPrinter" onload="true"/>
+            <feature name="BluetoothPrinter">
+                <param name="ios-package" value="BluetoothPrinter" onload="true"/>
             </feature>
         </config-file>
-        <header-file src="src/ios/BmbBluetoothPrinter.h" />
-        <source-file src="src/ios/BmbBluetoothPrinter.m" />
+        <header-file src="src/ios/BluetoothPrinter.h" />
+        <source-file src="src/ios/BluetoothPrinter.m" />
 
         <framework src="src/ios/PrinterSDK" custom="true" />
         <framework src="src/ios/PrinterSDK/libPrinterSDK.a" custom="true" />
         <framework src="src/ios/PrinterSDK/PrinterSDK.h" custom="true" />
 
     </platform>
-
-
 </plugin>

@@ -7,7 +7,7 @@
     "is_top_level": true,
     "variables": {}
   },
-  "com.bookmebus.printer": {
+  "cordova-plugin-thermal-bluetooth-printer": {
     "source": {
       "type": "local",
       "path": "/Users/bookmebus/Documents/Development/mobile/plugins/DemoApp/node_modules/cordova-plugin-bluetooth-printer"
